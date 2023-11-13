@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Landmark | Login</title>
+</head>
+<body>
+    
+    <form id="loginForm">
+        <span  id="loginFingerprintBtn">
+            <i class="fa-sharp fa-solid fa-fingerprint fa-lg"></i>
+        </span>
+
+        <h4 class="ms"> PLease CheckIn! </h4>
+    </form>
+    <div id="successMessage" style="display: none;">
+        <i class="fa-solid fa-circle-check fa-beat" style="color: #57b11b;"></i>
+        <h2 class="login">Checkin Successful!</h2>
+    </div>
+    
+    <script >
+
+        // LOGIN CODE
+
+
+// Function to "login" using fingerprint (dummy implementation)
+function loginWithFingerprint() {
+    // Dummy login success message
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("successMessage").style.display = "block";
+}
+
+document.getElementById("loginFingerprintBtn").addEventListener("click", loginWithFingerprint);
+    </script>
+</body>
+</html>

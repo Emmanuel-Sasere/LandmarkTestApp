@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landmark | Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="loader">
+        <div>
+            <h1>LOGO</h1>
+        </div>
+    </div>
+
+    <div class="content" id="hidden" style="display: none;">
+        <div class="container">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+    
+            <form id="registrationForm">
+                <input type="text" id="firstName" placeholder="First Name" required> <br>
+                <input type="text" id="lastName" placeholder="Last Name" required> <br>
+                <input type="email" id="email" placeholder="Email" required>  <br>
+                <br>
+                <button type="submit" id="fingerprintBtn"><i class="fa-sharp fa-solid fa-fingerprint fa-lg"></i></button>
+                <p id="fillInputMessage" style="display: none; color: red;">Please fill all inputs!</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        setTimeout(function() {
+            $(".loader").hide();
+            $("#hidden").show();
+        }, 5000); // Adjust the delay duration (in milliseconds) as needed
+    </script>
+    </script>
+</body>
+</html>
